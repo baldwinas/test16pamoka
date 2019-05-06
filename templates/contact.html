@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <p><h1>|Contacts|</h1></p>
+        <p>Edvinas Balsys<br>
+        Vilnius, Lithuania<br><br>
+        If you want to keep in touch with me,<br>
+        please enter your name and e-mail address<br>
+        below and i will contact you.
+        </p>
+    </div>
+<!--    </div>-->
+<form method="post" action="/contact">
+    <div class="container">
+        <p><input type="text" name="contact-name" placeholder="Your name"><br>
+
+        <p><input type="email" name="contact-email" placeholder="Your e-mail address"><br>
+
+        <p><textarea name="contact-message" placeholder="Your message"></textarea><br>
+
+        <p><button type="submit">Submit</button>
+    </div>
+</form>
+{% endblock content %}
